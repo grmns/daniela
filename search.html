@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Vuelos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Navegación</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="search.html">Buscar Vuelos</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1>Buscar Vuelos</h1>
+        </header>
+        <main>
+            <section id="search-section">
+                <form id="search-form">
+                    <div class="form-group">
+                        <label for="origin">Origen:</label>
+                        <select id="origin" name="origin" required>
+                            <option value="">Selecciona el origen</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destino:</label>
+                        <select id="destination" name="destination" required disabled>
+                            <option value="">Selecciona el destino</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dates">Fechas Disponibles:</label>
+                        <select id="dates" name="dates" required disabled>
+                            <option value="">Selecciona la fecha</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="airlines">Aerolíneas Disponibles:</label>
+                        <select id="airlines" name="airlines" required disabled>
+                            <option value="">Selecciona la aerolínea</option>
+                        </select>
+                    </div>
+                    <button type="submit">Buscar</button>
+                </form>
+            </section>
+            <section id="map-section">
+                <h2>Mapa</h2>
+                <div id="map"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATNm9gmZ8tRRkjvGCUCQCZoSqtbo9H3YE&callback=initMap"></script>
+</body>
+</html>

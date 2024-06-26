@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuelos Disponibles</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATNm9gmZ8tRRkjvGCUCQCZoSqtbo9H3YE&callback=initMap" async defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Navegación</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="search.html">Buscar Vuelos</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1>Vuelos Disponibles</h1>
+        </header>
+        <main>
+            <div class="main-content">
+                <section id="flights-section">
+                    <h2>Vuelos Disponibles</h2>
+                    <div id="flights-list" class="cards-container">
+                        <!-- Aquí se mostrarán los vuelos disponibles -->
+                    </div>
+                </section>
+                <section id="map-section">
+                    <h2>Mapa</h2>
+                    <div id="map"></div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Vuelo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Navegación</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="search.html">Buscar Vuelos</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1>Detalles del Vuelo</h1>
+        </header>
+        <main>
+            <section id="flight-details-section">
+                <h2>Detalles del Vuelo</h2>
+                <div id="flight-details" class="cards-container">
+                    <!-- Aquí se mostrarán los detalles del vuelo -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Ejecutando displayFlightDetails');
+            displayFlightDetails();
+        });
+    </script>
+</body>
+</html>
